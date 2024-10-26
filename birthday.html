@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Mừng Sinh Nhật!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="birthday-container">
+      <h1>
+        Chúc Mừng Sinh Nhật Chồng Yêu! <br />
+        <span class="centered-span">27-10-2024</span>
+      </h1>
+
+      <div class="gift-container">
+        <img
+          class="gift-box"
+          src="images/gift.jpg"
+          alt="Hộp quà 1"
+          onclick="showSurprise('images/surprise1.jpg', 'Cảm ơn mẹ đã sinh ra anh chồng đỉnh Everest')"
+        />
+        <img
+          class="gift-box"
+          src="images/gift.jpg"
+          alt="Hộp quà 2"
+          onclick="showSurprise('images/surprise2.jpg', 'Mãi yêu và hãnh diện về chị')"
+        />
+        <img
+          class="gift-box"
+          src="images/gift.jpg"
+          alt="Hộp quà 3"
+          onclick="showSurprise('images/surprise3.jpg', 'Em không là cô gái hoàn hảo nhưng tình yêu này luôn dành trọn cho anh, sẽ thay mẹ và chị yêu thương anh, vì anh xứng đáng, mình cùng nắm chặt tay nhau đi đến con đường hạnh phúc. Cùng nhìn mái tóc bạc màu vẫn nhớ ngày đầu. Mong những tháng năm về sau sẽ mãi bên nhau. Em đang ôm anh nè!!!')"
+        />
+      </div>
+    </div>
+
+    <script>
+      function showSurprise(image, title) {
+        // Chuyển đến trang bất ngờ với hình ảnh và tiêu đề
+        window.location.href = `surprise.html?image=${encodeURIComponent(
+          image
+        )}&title=${encodeURIComponent(title)}`;
+      }
+    </script>
+  </body>
+</html>

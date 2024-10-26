@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Mừng Sinh Nhật Chồng Yêu!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="index-container">
+      <h1>Con đường hạnh phúc</h1>
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="Chìa khóa là tên của vợ yêu nè!"
+      />
+      <button id="submitBtn" onclick="checkName()">Mãi yêu vợ</button>
+      <p id="errorMessage" class="error"></p>
+    </div>
+
+    <script>
+      function checkName() {
+        const inputName = document.getElementById("nameInput").value;
+        const correctName = "Trần Thị Kim Cương"; // Tên đúng
+
+        if (inputName === correctName) {
+          // Nếu tên đúng, chuyển đến trang chúc mừng sinh nhật
+          window.location.href = "birthday.html";
+        } else {
+          // Nếu tên không đúng, hiển thị thông báo lỗi
+          document.getElementById("errorMessage").innerText =
+            "Anh đánh rơi vợ rồi!!!";
+        }
+      }
+    </script>
+  </body>
+</html>

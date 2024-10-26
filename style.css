@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap");
+h1 {
+  font-size: 30px;
+  padding-top: 1%;
+  padding-bottom: 15%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Thiết lập cho body */
+body {
+  font-family: "Pacifico", cursive;
+  height: 100vh; /* Chiều cao của trang */
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  color: rgb(237, 189, 218); /* Màu chữ */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Đổ bóng cho chữ */
+}
+
+/* Container cho trang chính */
+.index-container {
+  background-image: url("images/index-bg.jpg"); /* Hình nền cho trang chính */
+  width: 90%;
+  background-size: 80% auto; /* Đảm bảo hình nền phủ kín */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-position: center; /* Căn giữa hình nền */
+  height: 600%; /* Đặt chiều cao của container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container cho trang sinh nhật */
+.birthday-container {
+  background-image: url("images/birthday-bg.jpg"); /* Hình nền cho trang sinh nhật */
+  background-size: 60% auto; /* Điều chỉnh hình nền để vừa với màn hình */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-position: center; /* Căn giữa hình nền */
+  height: 100%; /* Đặt chiều cao của container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container cho trang bất ngờ */
+.surprise-container {
+  background-image: url("images/surprise-bg.jpg"); /* Hình nền cho trang bất ngờ */
+  background-size: contain; /* Đảm bảo hình nền vừa với trang */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-position: center; /* Căn giữa hình nền */
+  height: 300px; /* Đặt chiều cao cho container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input text */
+input {
+  padding: 10px;
+  border: none; /* Bỏ viền cho input */
+  border-radius: 5px; /* Bo góc cho input */
+  margin-bottom: 10px; /* Khoảng cách dưới input */
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border: none; /* Bỏ viền cho nút */
+  border-radius: 5px; /* Bo góc cho nút */
+  background-color: #f596c7; /* Màu nền cho nút */
+  color: black; /* Màu chữ nút */
+  cursor: pointer; /* Con trỏ chuột khi hover */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+}
+
+button:hover {
+  background-color: #f596c7; /* Màu nền nút khi hover */
+}
+
+/* Thông báo lỗi */
+.error {
+  color: red; /* Màu chữ thông báo lỗi */
+  margin-top: 10px; /* Khoảng cách trên thông báo lỗi */
+}
+
+/* Hộp quà */
+.gift-container {
+  padding-top: 50%;
+  display: 30%;
+  justify-content: center; /* Căn giữa các hộp quà */
+  margin-top: 20px; /* Khoảng cách trên hộp quà */
+}
+
+.gift-box {
+  width: 80px; /* Kích thước hình ảnh hộp quà */
+  height: 80px; /* Chiều cao của hộp quà */
+  object-fit: cover; /* Đảm bảo hình ảnh không bị méo */
+  border-radius: 10px; /* Bo góc cho hình ảnh */
+  cursor: pointer; /* Con trỏ chuột khi hover */
+  margin: 0 10px; /* Khoảng cách giữa các hộp quà */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+}
+
+.gift-box:hover {
+  transform: scale(1.1); /* Phóng to khi hover */
+}
+
+/* Hình ảnh bất ngờ */
+.surprise-image {
+  margin-top: 10px;
+  max-width: 1000px; /* Kích thước tối đa của hình ảnh bất ngờ */
+  height: 300px; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ */
+  border-radius: 10px; /* Bo góc cho hình ảnh */
+  margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+}
+.surprise-container {
+  padding-top: -200px;
+  padding-bottom: -1500px;
+}
+/* Tiêu đề cho hình ảnh bất ngờ */
+.surprise-title {
+  font-size: 1.5em; /* Kích thước chữ cho tiêu đề */
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+#nameInput {
+  width: 260px; /* Đặt chiều rộng cho khung nhập */
+  padding: 10px; /* Thêm khoảng cách bên trong */
+  font-size: 16px; /* Kích thước chữ bên trong khung nhập */
+  border: 2px solid #e74c3c; /* Màu và độ dày của đường viền */
+  border-radius: 5px; /* Bo tròn góc khung nhập */
+  outline: none; /* Ẩn đường viền khi đang nhập */
+  transition: border-color 0.3s; /* Hiệu ứng chuyển đổi khi hover */
+}

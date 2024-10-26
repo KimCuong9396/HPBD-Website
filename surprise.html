@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bất Ngờ</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="surprise-container">
+      <h1 id="surpriseTitle">Bất Ngờ!</h1>
+      <img id="surpriseImage" src="" alt="Bất ngờ" class="surprise-image" />
+      <button id="closeBtn" onclick="closeSurprise()">Yêu lại từ đầu</button>
+    </div>
+
+    <script>
+      // Nhận URL hình ảnh từ tham số trong URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const imageSrc = urlParams.get("image");
+      const title = urlParams.get("title");
+
+      // Thiết lập hình ảnh và tiêu đề
+      document.getElementById("surpriseImage").src = imageSrc;
+      document.getElementById("surpriseTitle").innerText = title;
+
+      function closeSurprise() {
+        // Quay lại trang hộp quà
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>

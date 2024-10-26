@@ -139,3 +139,17 @@ button:hover {
   outline: none; /* Ẩn đường viền khi đang nhập */
   transition: border-color 0.3s; /* Hiệu ứng chuyển đổi khi hover */
 }
+/* Cho màn hình điện thoại */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    background-color: #ffffff;
+  }
+}
+
+/* Cho màn hình rất nhỏ (ví dụ điện thoại nhỏ) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
